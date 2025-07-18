@@ -1,0 +1,6 @@
+python>=3.9
+trino[sqlalchemy]==0.332.0
+polars
+pandas
+matplotlib
+numpy
