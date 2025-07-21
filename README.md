@@ -40,7 +40,7 @@ The project lives in two Jupyter notebooks that query a Trino (Presto) data-ware
 *Builds on Notebook 01 and adds a reliability dimension.*
 
 1. **Load domain-level reliability scores**  
-   Joins article records to the *Lin H, Lasser J, Lewandowsky S, et al. (2023) High level of correspondence across different news domain quality rating sets. PNAS Nexus 2:pgad286.* reliability dataset stored in the warehouse.
+   Joins article records to the reliability dataset stored in the warehouse. *Lin H, Lasser J, Lewandowsky S, et al. (2023) High level of correspondence across different news domain quality rating sets. PNAS Nexus 2:pgad286.*
 
 2. **Classify each article**  
    With tunable thresholds (default: `score > 0.60 ⇒ Reliable`, `score < 0.40 ⇒ Unreliable`, else “Mid”).
