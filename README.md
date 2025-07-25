@@ -4,10 +4,11 @@
 
 The project lives in two Jupyter notebooks that query a Trino (Presto) data-warehouse, wrangle the results with **Polars**, and create share-anywhere visualisations with **Matplotlib**.
 
-| Notebook | Focus | Principal JSON outputs |
-|----------|-------|------------------------|
-| **`01_news_visualization_over_time.ipynb`** | Baseline volume & topical mix. | `daily_news_counts.json` • `topic_news_counts.json` • `country_news_counts.json` • `language_news_counts.json` |
-| **`02_reliable_unreliable_news_visualization_over_time.ipynb`** | Contrasts **reliable vs unreliable** sources with diverging bar charts. | `daily_news_counts_diverging.json` • `topic_news_counts_diverging.json` • `country_news_counts_diverging.json` • `language_news_counts_diverging.json` |
+| Notebook | Focus | Main JSON outputs |
+|----------|-------|-------------------|
+| **`01_news_visualization_over_time.ipynb`** | Baseline volume & topical mix. | `daily_news_counts.json` · `topic_news_counts.json` · `country_news_counts.json` · `language_news_counts.json` |
+| **`02_reliable_unreliable_news_visualization_over_time.ipynb`** | Contrasts **reliable vs unreliable** sources with diverging bar charts. | `daily_news_counts_diverging.json` · `topic_news_counts_diverging.json` · `country_news_counts_diverging.json` · `language_news_counts_diverging.json` |
+| **`0003_plot_text_disinformation_signals_detection.ipynb`** | Surfaces **40 + disinformation signals** (e.g. conspiracy, trolling, emotional manipulation) detected in article text. | `daily_disinfo_signals.json` · `topic_disinfo_signals.json` · `country_disinfo_signals.json` · `language_disinfo_signals.json` |
 
 ---
 
