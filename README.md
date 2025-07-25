@@ -1,10 +1,9 @@
 # News Visualization Over Time &nbsp;📊🗞️
 
-```
 *Track how the **volume**, **topics**, **languages**, **reliability**, **disinformation tactics**, **check‑worthy claims**, and **image–text alignment** of online‑news coverage evolve day‑by‑day.*
 
 The project now lives in **five** Jupyter notebooks that query a Trino (Presto) data‑warehouse, wrangle the results with **Polars**, and create share‑anywhere visualisations with **Matplotlib**.
-```
+
 
 | Notebook | Focus | Main JSON outputs |
 |----------|-------|-------------------|
