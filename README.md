@@ -10,6 +10,7 @@ The project lives in two Jupyter notebooks that query a Trino (Presto) data-ware
 | **`02_reliable_unreliable_news_visualization_over_time.ipynb`** | Contrasts **reliable vs unreliable** sources with diverging bar charts. | `daily_news_counts_diverging.json` · `topic_news_counts_diverging.json` · `country_news_counts_diverging.json` · `language_news_counts_diverging.json` |
 | **`03_plot_text_disinformation_signals_detection.ipynb`** | Groups > 40 signals into **nine disinformation tactics** and builds a treemap. | `tactic_treemap.json` |
 | **`04_plot_text_checkworthy_claim_detection_join.ipynb`** | Flags **check‑worthy claims** (title vs body) and charts daily counts. | `checkworthy_claim_detection_plot.json` |
+| **`05_multimodal_visual_text_misalignment_detection.ipynb`** | Detects image‑text mis‑alignment and charts daily aligned vs misaligned counts. | aligned_vs_misaligned_daily.json |
 
 ---
 
@@ -82,5 +83,15 @@ The project lives in two Jupyter notebooks that query a Trino (Presto) data-ware
 3. Aggregate daily counts of check‑worthy titles vs bodies.  
 4. Export `checkworthy_claim_detection_plot.json`.  
 5. Plot a bar chart to visualise it.
+
+---
+
+## 5 Notebook 05 – Multimodal Visual–Text Mis‑alignment
+
+1. Load each article’s main image plus title/lead text  
+2. Call the Visual–Text Mis‑alignment Detection API  
+3. Aggregate daily counts of *Aligned* and *Misaligned* items  
+4. Export `aligned_vs_misaligned_daily.json`  
+5. Plot a stacked bar chart to track mis‑alignment over time
 
 ---
