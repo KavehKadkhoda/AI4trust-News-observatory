@@ -9,6 +9,7 @@ The project lives in two Jupyter notebooks that query a Trino (Presto) data-ware
 | **`01_news_visualization_over_time.ipynb`** | Baseline volume & topical mix. | `daily_news_counts.json` · `topic_news_counts.json` · `country_news_counts.json` · `language_news_counts.json` |
 | **`02_reliable_unreliable_news_visualization_over_time.ipynb`** | Contrasts **reliable vs unreliable** sources with diverging bar charts. | `daily_news_counts_diverging.json` · `topic_news_counts_diverging.json` · `country_news_counts_diverging.json` · `language_news_counts_diverging.json` |
 | **`03_plot_text_disinformation_signals_detection.ipynb`** | Groups > 40 signals into **nine disinformation tactics** and builds a treemap. | `tactic_treemap.json` |
+| **`04_plot_text_checkworthy_claim_detection_join.ipynb`** | Flags **check‑worthy claims** (title vs body) and charts daily counts. | `checkworthy_claim_detection_plot.json` |
 
 ---
 
@@ -71,5 +72,15 @@ The project lives in two Jupyter notebooks that query a Trino (Presto) data-ware
 3. Count tactic hits per day.  
 4. Export `tactic_treemap.json`.  
 5. Visualise a treemap showing which tactics dominate your corpus.
+
+---
+
+## 4 Notebook 04 – Check‑worthy Claim Detection
+
+1. Call the **Check‑worthy Claim Detection API** on every article’s title and body.  
+2. Merge results with metadata (`publish_date`).  
+3. Aggregate daily counts of check‑worthy titles vs bodies.  
+4. Export `checkworthy_claim_detection_plot.json`.  
+5. Plot a bar chart to visualise it.
 
 ---
