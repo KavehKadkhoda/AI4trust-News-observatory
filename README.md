@@ -62,3 +62,20 @@ The project lives in two Jupyter notebooks that query a Trino (Presto) data-ware
    A tiny, self-contained cell reloads any JSON and draws a symmetric, diverging bar-chart (green = Reliable, red = Unreliable by default).
 
 ---
+
+## 3 Notebook 03 – Disinformation‑Signal overlay
+
+*Adds a content‑level look at *how* articles may attempt to mislead.*
+
+1. **Call the Disinformation‑Signal API** –  
+   Uses the “Disinformation Signal Detection in Text” service (multilingual LLM‑based) to tag > 40 rhetorical signals per article.  
+2. **Post‑process results** – Flattens multi‑label detections and keeps the highest‑confidence signal per tactic per article segment.  
+3. **Align with article metadata** – Joins signal hits back to the article dataframe to preserve `publish_date`, `topic`, `language`, and `country`.  
+4. **Aggregate signal counts** – Produces daily totals of each tactic for overall volume, topic, language, and source country.  
+5. **Export signal JSON** – Writes `*_disinfo_signals.json` files ready for plotting or downstream dashboards.  
+6. **Visualise tactics over time** – Generates heat‑maps and stacked‑area charts to show which disinformation strategies trend on which dates.
+
+> **Dependencies:** The notebook expects environment variables `DISINFO_API_ENDPOINT` and `DISINFO_API_KEY`.  
+> **Tip:** Run small test batches first—LLM calls can be time‑consuming on very large corpora.
+
+---
