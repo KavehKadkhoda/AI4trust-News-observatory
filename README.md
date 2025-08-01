@@ -7,11 +7,11 @@ The project now lives in **five** Jupyter notebooks that query a Trino (Presto
 
 | Notebook | Focus | Main JSON outputs |
 |----------|-------|-------------------|
-| **`01_news_visualization_over_time.ipynb`** | Baseline volume & topical mix. | `daily_news_counts.json` · `topic_news_counts.json` · `country_news_counts.json` · `language_news_counts.json` |
-| **`02_reliable_unreliable_news_visualization_over_time.ipynb`** | Contrasts **reliable vs unreliable** sources with diverging bar charts. | `daily_news_counts_diverging.json` · `topic_news_counts_diverging.json` · `country_news_counts_diverging.json` · `language_news_counts_diverging.json` |
-| **`03_plot_text_disinformation_signals_detection.ipynb`** | Groups > 40 signals into **nine disinformation tactics** and builds a treemap. | `tactic_treemap.json` |
-| **`04_plot_text_checkworthy_claim_detection_join.ipynb`** | Flags **check‑worthy claims** (title vs body) and charts daily counts. | `checkworthy_claim_detection_plot.json` |
-| **`05_multimodal_visual_text_misalignment_detection.ipynb`** | Detects image‑text mis‑alignment and charts daily aligned vs misaligned counts. | `aligned_vs_misaligned_daily.json` |
+| **`01_Daily_News_Collection_Analysis_Notebook.ipynb`** | Baseline volume & topical mix. | `daily_news_counts.json` · `topic_news_counts.json` · `country_news_counts.json` · `language_news_counts.json` |
+| **`02_News_Data_Reliability_Analysis.ipynb`** | Contrasts **reliable vs unreliable** sources with diverging bar charts. | `daily_news_counts_diverging.json` · `topic_news_counts_diverging.json` · `country_news_counts_diverging.json` · `language_news_counts_diverging.json` |
+| **`03_Detecting_Disinformation_Tactics_in_News_Articles.ipynb`** | Groups > 40 signals into **nine disinformation tactics** and builds a treemap. | `tactic_treemap.json` |
+| **`04_Checkworthy_Claim_Detection_in_News_Articles.ipynb`** | Flags **check‑worthy claims** (title vs body) and charts daily counts. | `checkworthy_claim_detection_plot.json` |
+| **`05_Multimodal_Visual_Text_Mis_alignment_Detection.ipynb`** | Detects image‑text mis‑alignment and charts daily aligned vs misaligned counts. | `aligned_vs_misaligned_daily.json` |
 
 ---
 
